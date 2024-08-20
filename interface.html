@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime and Factorial</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-300">
+  <main>
+    <div class="container mx-auto flex flex-col items-center justify-center space-y-4 max-w-lg p-8">
+      <!-- Instructions Field -->
+      <div class="flex flex-col items-center justify-center border border-black rounded space-y-2 p-4">
+        <h2 class="font-bold text-lg text-center uppercase">Instructions</h2>
+        
+        <ol class="list-decimal list-inside space-y-2 text-left">
+          <li>Enter a number in the input field.</li>
+          <li>Click the "Submit" button.</li>
+          <li>The program will check if the number is prime and calculate its factorial.</li>
+          <li>The results will be displayed below the input field.</li>
+        </ol>
+        
+        <p class="text-sm italic text-center">
+          Note: Please enter a positive integer.
+        </p>
+      </div>
+
+      <!-- I/O Field -->
+      <div class="flex flex-col items-center justify-center border border-black rounded space-y-4 p-4 w-full">
+        <div>
+          <h2 class="font-bold text-base uppercase sm:text-lg">
+            Prime Checker and Factorial Calculator
+          </h2>
+    
+          <p class="font-normal italic text-center">
+            by: <a href="https://www.linkedin.com/in/raven-david-511407279" target="_blank" class="underline">Raven David</a>
+          </p>
+        </div>
+
+        <!-- Input Field -->
+        <div class="flex flex-row items-center space-x-2">
+          <h5 class="uppercase font-medium">Enter a Number: </h5>
+          <input type="text" class="number-input rounded border border-black p-1" placeholder="ex. 19">
+        </div>
+
+        <!-- Output Field -->
+        <div class="dom-output border-t border-black pt-2 w-full text-center">
+          <p id="prime-output" class="text-base"></p>
+          <p id="factorial-output" class="text-base"></p>
+        </div>
+    
+        <!-- Buttons -->
+        <div class="flex flex-row space-x-2 w-full">
+          <button class="submit-input rounded uppercase bg-black text-white p-2 w-full">
+            Submit
+          </button>
+          
+          <button class="reset-input rounded uppercase bg-gray-500 text-white p-2 w-full">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="functions.js"></script>
+</body>
+</html>
