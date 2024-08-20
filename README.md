@@ -1,2 +1,2 @@
 # SWE-INTERN-ASSESSMENT
-PRIME NUMBER CHECKER AND FACTORIAL CALCULATOR USING TAILWIND CSS AND VANILLA JS
+This repository contains a web-based "Prime Checker and Factorial Calculator" application developed as part of my Software Engineering Intern assessment for Elinnov Technologies, Inc. The application is built using HTML, JavaScript, and Tailwind CSS, and provides a simple graphical interface where users can input a number to check if it is prime and calculate its factorial. The project showcases my ability to build logical solutions, optimize code for performance, and create a user-friendly interface, all while adhering to best practices in web development.
