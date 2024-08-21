@@ -19,6 +19,7 @@ const factorial = (num) => {
     .reduce((acc, curr) => acc * curr, 1); // Multiply all elements together
 };
 
+// Submit Input
 document.querySelector('.submit-input').addEventListener('click', () => {
   const numberInput = document.querySelector('.number-input').value.trim();
   
@@ -47,6 +48,7 @@ document.querySelector('.submit-input').addEventListener('click', () => {
   }
 });
 
+// Reset Input
 document.querySelector('.reset-input').addEventListener('click', () => {
   document.querySelector('.number-input').value = "";
   document.querySelector('.prime-output').textContent = "";
