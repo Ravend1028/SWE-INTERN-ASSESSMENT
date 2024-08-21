@@ -23,32 +23,32 @@ document.querySelector('.submit-input').addEventListener('click', () => {
   const numberInput = document.querySelector('.number-input').value.trim();
   
   if (numberInput === "") {
-    document.querySelector('#prime-output').textContent = "Input cannot be empty. Please enter a number.";
-    document.querySelector('#factorial-output').textContent = "";
+    document.querySelector('.prime-output').textContent = "Input cannot be empty. Please enter a number.";
+    document.querySelector('.factorial-output').textContent = "";
   } else {
     const number = parseInt(numberInput, 10);
 
     if (isNaN(number) || number <= 0) {
-      document.querySelector('#prime-output').textContent = "Please enter a valid positive integer.";
-      document.querySelector('#factorial-output').textContent = "";
+      document.querySelector('.prime-output').textContent = "Please enter a valid positive integer.";
+      document.querySelector('.factorial-output').textContent = "";
     } else {
       // Clear previous outputs
-      document.querySelector('#prime-output').textContent = "";
-      document.querySelector('#factorial-output').textContent = "";
+      document.querySelector('.prime-output').textContent = "";
+      document.querySelector('.factorial-output').textContent = "";
 
       // Perform prime check and factorial calculation
       const primeResult = isPrime(number) ? `${number} is a prime number.` : `${number} is not a prime number.`;
       const factorialResult = `Factorial of ${number} is ${factorial(number)}.`;
 
       // Display results
-      document.querySelector('#prime-output').textContent = primeResult;
-      document.querySelector('#factorial-output').textContent = factorialResult;
+      document.querySelector('.prime-output').textContent = primeResult;
+      document.querySelector('.factorial-output').textContent = factorialResult;
     }
   }
 });
 
 document.querySelector('.reset-input').addEventListener('click', () => {
   document.querySelector('.number-input').value = "";
-  document.querySelector('#prime-output').textContent = "";
-  document.querySelector('#factorial-output').textContent = "";
+  document.querySelector('.prime-output').textContent = "";
+  document.querySelector('.factorial-output').textContent = "";
 });
